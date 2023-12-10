@@ -1,0 +1,41 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+#uploadSection {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#photoWall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+    padding: 10px;
+}
+
+#photoWall img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+#photoWall img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
